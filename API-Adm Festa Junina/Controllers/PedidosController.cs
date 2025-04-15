@@ -36,5 +36,12 @@ namespace API_Adm_Festa_Junina.Controllers
 
             return Ok(pedidos);
         }
+
+        [HttpGet("Contagem")] //Contagem de pedidos
+        public async Task<ActionResult<IEnumerable<pedidos>>> ContagemPedidos()
+        {
+            var pedidos = await _dbContext.pedidos.ToListAsync();
+            return Ok(pedidos.Count());
+        }
     }
 }

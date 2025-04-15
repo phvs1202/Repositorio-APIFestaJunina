@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\",
+  "WorkspaceRootPath": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\entradacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\entradacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\repository\\dbfestajuninacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\repository\\dbfestajuninacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\respostascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\respostascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\valerio\\backend\\projeto festa junina\\api-adm festa junina\\api-adm festa junina\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,102 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBFestaJuninaContext.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T11:59:14.371Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Model\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Model\\LoginRequest.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Model\\LoginRequest.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Model\\LoginRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:09:45.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDUAAAANAAAA",
+              "Title": "EntradaController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\EntradaController.cs",
+              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\EntradaController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\EntradaController.cs",
+              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\EntradaController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwBoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:05:06.226Z",
+              "WhenOpened": "2025-04-15T18:00:36.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IngressoController.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "RespostasController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\RespostasController.cs",
+              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\RespostasController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\RespostasController.cs",
+              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\RespostasController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswDMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:20:11.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Helpers\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Helpers\\PasswordHasher.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Helpers\\PasswordHasher.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Helpers\\PasswordHasher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:13:15.379Z",
+              "WhenOpened": "2025-04-15T14:28:46.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
               "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAkwBYAAABBAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAADwvzsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:11:52.751Z",
+              "WhenOpened": "2025-04-15T14:28:25.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Program.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Program.cs",
-              "ToolTip": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\Program.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCcAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:03:18.348Z",
+              "WhenOpened": "2025-04-15T14:18:40.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IngressoController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:17:00.42Z",
               "EditorCaption": ""
             }
           ]

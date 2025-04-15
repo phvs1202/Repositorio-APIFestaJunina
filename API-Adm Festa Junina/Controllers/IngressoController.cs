@@ -37,5 +37,12 @@ namespace API_Adm_Festa_Junina.Controllers
 
             return Ok(ingresso);
         }
+
+        [HttpGet("Contagem")] //Contagem de ingressos
+        public async Task<ActionResult<IEnumerable<ingresso>>> ContagemIngressos()
+        {
+            var lotes = await _dbContext.ingresso.ToListAsync();
+            return Ok(lotes.Count());
+        }
     }
 }

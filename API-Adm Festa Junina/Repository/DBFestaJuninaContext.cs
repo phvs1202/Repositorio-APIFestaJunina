@@ -17,5 +17,6 @@ namespace API_Adm_Festa_Junina.Repository
         public DbSet<respostas> respostas { get; set; }
         public DbSet<usuario> usuario { get; set; }
         public DbSet<cliente> cliente { get; set; }
+        public DbSet<entrada> entrada{ get; set; }
     }
 }

@@ -2917,11 +2917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\API-Adm Festa Junina.csproj",
+      "projectUniqueName": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\API-Adm Festa Junina.csproj",
       "projectName": "API-Adm Festa Junina",
-      "projectPath": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\API-Adm Festa Junina.csproj",
+      "projectPath": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\API-Adm Festa Junina.csproj",
       "packagesPath": "C:\\Users\\Pedro Valério\\.nuget\\packages\\",
-      "outputPath": "C:\\Valerio\\backend\\Projeto festa junina\\API-Adm Festa Junina\\API-Adm Festa Junina\\obj\\",
+      "outputPath": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
