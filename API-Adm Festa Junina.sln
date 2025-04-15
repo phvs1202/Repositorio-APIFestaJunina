@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API-Adm Festa Junina", "API-Adm Festa Junina\API-Adm Festa Junina.csproj", "{27159E22-0428-4F4E-BA4C-A38BC74F238E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27159E22-0428-4F4E-BA4C-A38BC74F238E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27159E22-0428-4F4E-BA4C-A38BC74F238E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27159E22-0428-4F4E-BA4C-A38BC74F238E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27159E22-0428-4F4E-BA4C-A38BC74F238E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA51CE13-DD33-4CB1-91FC-4BB43EA00F22}
+	EndGlobalSection
+EndGlobal
