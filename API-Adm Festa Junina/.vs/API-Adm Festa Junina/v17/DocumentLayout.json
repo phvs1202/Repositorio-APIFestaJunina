@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF7951E-BD23-2311-8645-C170E86ACAC8}|API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF7951E-BD23-2311-8645-C170E86ACAC8}|API-Adm Festa Junina.csproj|solutionrelative:controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngressoController.cs",
+              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IngressoController.cs",
+              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "RelativeToolTip": "Controllers\\IngressoController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAuwDQAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:43:12.128Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 302,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,6 @@
         public DateTime data_termino { get; set; }
         public decimal valor_un { get; set; }
         public int usuario_id { get; set; }
-        public int usuario_perfil_id { get; set; }
         public int ativo { get; set; }
     }
 }
