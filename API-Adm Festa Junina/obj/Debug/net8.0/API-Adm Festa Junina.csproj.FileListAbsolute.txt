@@ -241,3 +241,7 @@ C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.
 C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.pdb
 C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.genruntimeconfig.cache
 C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\ref\API-Adm Festa Junina.dll
+C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MailKit.dll
+C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MimeKit.dll
+C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\ProjetoJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

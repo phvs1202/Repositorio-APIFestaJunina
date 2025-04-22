@@ -1,34 +1,46 @@
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 using System.Threading.Tasks;
 
-public class EmailService : IEmailService
+public class EmailSender : IEmailSender
 {
-    private readonly HttpClient _httpClient;
-    private readonly string _apiKey = "mlsn.592ca79cb1a15199168a9e24bbb091f6b381af20ce6a914f18d1fad03e7ba884";
+    private readonly IConfiguration _configuration;
 
-    public EmailService()
+    public EmailSender(IConfiguration configuration)
     {
-        _httpClient = new HttpClient();
-        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
+        _configuration = configuration;
     }
 
-    public async Task<bool> EnviarEmailAsync(string destinatario, string assunto, string conteudoHtml)
+    public async Task SendEmailAsync(string to, string subject, string body)
     {
-        var data = new
+        var email = new MimeMessage();
+
+        // Configura o remetente
+        email.From.Add(MailboxAddress.Parse(_configuration["Email:From"]));
+        email.To.Add(MailboxAddress.Parse(to));
+        email.Subject = subject;
+
+        // Define o corpo do e-mail como HTML
+        email.Body = new TextPart("html")
         {
-            from = new { email = "test-eqvygm0z2wdl0p7w.mlsender.net", name = "SENAI_FESTA_JUNINA" },
-            to = new[] { new { email = destinatario } },
-            subject = assunto,
-            html = conteudoHtml
+            Text = body
         };
 
-        var json = JsonSerializer.Serialize(data);
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
+        using var smtp = new SmtpClient();
 
-        var response = await _httpClient.PostAsync("https://api.mailersend.com/v1/email", content);
-        return response.IsSuccessStatusCode;
+        await smtp.ConnectAsync(
+            _configuration["Email:Smtp"],
+            int.Parse(_configuration["Email:Port"]),
+            SecureSocketOptions.StartTls
+        );
+
+        await smtp.AuthenticateAsync(
+            _configuration["Email:Username"],
+            _configuration["Email:Password"]
+        );
+
+        await smtp.SendAsync(email);
+        await smtp.DisconnectAsync(true);
     }
 }
