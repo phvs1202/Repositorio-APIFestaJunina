@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-public interface IEmailService
+public interface IEmailSender
 {
-    Task<bool> EnviarEmailAsync(string destinatario, string assunto, string conteudoHtml);
+    Task SendEmailAsync(string to, string subject, string body);
 }
