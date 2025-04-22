@@ -8,6 +8,8 @@ using Microsoft.VisualBasic;
 using Org.BouncyCastle.Bcpg.Sig;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Pkcs;
+using QRCoder;
+using System.Drawing.Imaging;
 
 namespace API_Adm_Festa_Junina.Controllers
 {
@@ -28,7 +30,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(lotes);
         }
 
-        [HttpPut("{id}")] //Alterar status dos ingressos
+        [HttpPut("AlterarStatus/{id}")] //Alterar status dos ingressos
         public async Task<ActionResult<ingresso>> Atualizar(int id, [FromBody] ingresso ingresso)
         {
             var ingressoAtual = await _dbContext.ingresso.FindAsync(id);
@@ -42,32 +44,76 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(ingresso);
         }
 
-        [HttpGet("Contagem")] //Contagem de ingressos
+        [HttpGet("ContagemIngressos")] //Contagem de ingressos
         public async Task<ActionResult<IEnumerable<ingresso>>> ContagemIngressos()
         {
             var lotes = await _dbContext.ingresso.ToListAsync();
             return Ok(lotes.Count());
         }
 
-        [HttpPost("Reserva")] //Reservar ingresso
+        [HttpPost("ReservaIngressos")] //Reservar ingresso
         public async Task<ActionResult<ingresso>> CriarUser([FromBody] List<ingresso> ingresso)
         {
             try
             {
-                var novoGuid = Guid.NewGuid(); //Para diferenciar cada pedido de ingresso, implementei um GUID
-
-                var lote = _dbContext.lote.Where(i => i.ativo == 1).FirstOrDefault(); //Vê qual lote está ativo
-                var listaIngressos = await _dbContext.ingresso.ToListAsync(); //Lista de ingressos
+                var novoGuid = Guid.NewGuid(); // Para diferenciar cada pedido de ingresso, implementei um GUID
+                var lote = _dbContext.lote.Where(i => i.ativo == 1).FirstOrDefault(); // Vê qual lote está ativo
+                if (lote == null)
+                {
+                    return BadRequest("Não há lote ativo disponível.");
+                }
 
                 foreach (var ingressos in ingresso)
                 {
+                    var idCliente = ingressos.cliente_id;
+                    var idTipo = ingressos.tipo_ingresso_id;
+                    var cliente = _dbContext.cliente.Where(i => i.id == idCliente).FirstOrDefault();
+                    var tipo = _dbContext.tipo_ingresso.Where(i => i.id == idTipo).FirstOrDefault();
+
+                    if (cliente == null || tipo == null)
+                    {
+                        return BadRequest("Cliente ou tipo de ingresso inválido.");
+                    }
+
+                    string guid = Guid.NewGuid().ToString();
+                    var dataFormatada = DateTime.Now.ToString("ddMMyyyyHHmmss");
+                    var conteudoCodigo = $"792-CodigoUnico-{guid}-Cliente-{cliente.nome}-HoraEdia{dataFormatada}-TipoDoIngresso-{tipo.nome}"; // Conteúdo do QR Code
+
+                    ingressos.qrcode = conteudoCodigo;
                     ingressos.guid = novoGuid;
                     ingressos.status_id = 1;
-                    _dbContext.ingresso.Add(ingressos); 
+                    _dbContext.ingresso.Add(ingressos);  // Adiciona o ingresso à base de dados
                 }
 
-                await _dbContext.SaveChangesAsync();
+                await _dbContext.SaveChangesAsync(); // Salva os ingressos no banco
 
+                // Gerar o QR Code para cada ingresso
+                foreach (var ingressos in ingresso)
+                {
+                    var conteudoCodigo = ingressos.qrcode;  // Use o conteúdo gerado para o ingresso específico
+
+                    // Gerar o QR Code
+                    QRCodeGenerator GeradorQR = new QRCodeGenerator();
+                    var qrData = GeradorQR.CreateQrCode(conteudoCodigo, QRCodeGenerator.ECCLevel.Q);
+                    using var qrCode = new QRCode(qrData);
+                    using var qrImage = qrCode.GetGraphic(20);
+
+                    // Garantir que o diretório existe
+                    string pastaRaiz = Path.Combine(Directory.GetCurrentDirectory(), "QRCodeImagens");
+                    if (!Directory.Exists(pastaRaiz))
+                    {
+                        Directory.CreateDirectory(pastaRaiz); // Cria a pasta se não existir
+                    }
+
+                    // Gerar nome único para o arquivo, baseado no conteúdo do QR Code
+                    string nomeArquivo = $"{ingressos.qrcode}.png";  // Usa um GUID para garantir que o nome seja único
+                    string caminhoCompleto = Path.Combine(pastaRaiz, nomeArquivo);
+
+                    // Salvar a imagem do QR Code
+                    qrImage.Save(caminhoCompleto, ImageFormat.Png);
+                }
+
+                // Criar o pedido
                 var ingressosDoPedido = await _dbContext.ingresso
                     .Where(i => i.guid == novoGuid)
                     .ToListAsync();
@@ -85,16 +131,19 @@ namespace API_Adm_Festa_Junina.Controllers
                 };
 
                 _dbContext.pedidos.Add(pedidos);
-                await _dbContext.SaveChangesAsync();
+                await _dbContext.SaveChangesAsync();  // Salva o pedido no banco
+
             }
             catch (Exception ex)
             {
-                return BadRequest($"{ex.Message}, {ex.InnerException.Message}");
+                return BadRequest($"Erro: {ex.Message}\nDetalhes: {ex.InnerException?.Message ?? "Nenhuma exceção interna"}");
             }
+
             return Ok(ingresso);
         }
 
-        [HttpGet("Consultar/{id}")] //Consultar ingresso específico
+
+        [HttpGet("ConsultarIngresso/{id}")] //Consultar ingresso específico
         public async Task<ActionResult<IEnumerable<ingresso>>> consultar(int id)
         {
             var ingresso = await _dbContext.ingresso.Where(i => i.cliente_id == id).ToListAsync();

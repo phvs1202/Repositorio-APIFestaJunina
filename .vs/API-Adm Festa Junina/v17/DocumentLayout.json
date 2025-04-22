@@ -1,41 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repositorio-APIFestaJunina\\",
+  "WorkspaceRootPath": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\repository\\dbfestajuninacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\repository\\dbfestajuninacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\repository\\dbfestajuninacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\dtos\\reservaingressodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\dtos\\reservaingressodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\dtos\\itemreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\dtos\\itemreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\ingressoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\ingressoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\entradacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\entradacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\respostascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\respostascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27159E22-0428-4F4E-BA4C-A38BC74F238E}|API-Adm Festa Junina\\API-Adm Festa Junina.csproj|solutionrelative:api-adm festa junina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,120 +22,33 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DBFestaJuninaContext.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
               "RelativeDocumentMoniker": "API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
               "RelativeToolTip": "API-Adm Festa Junina\\Repository\\DBFestaJuninaContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T11:22:14.699Z",
+              "WhenOpened": "2025-04-22T17:57:56.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReservaIngressoDTO.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\DTOs\\ReservaIngressoDTO.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\DTOs\\ReservaIngressoDTO.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\DTOs\\ReservaIngressoDTO.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\DTOs\\ReservaIngressoDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T11:15:34.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ItemReservaDTO.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\DTOs\\ItemReservaDTO.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\DTOs\\ItemReservaDTO.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\DTOs\\ItemReservaDTO.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\DTOs\\ItemReservaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T11:15:32.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IngressosController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressosController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\IngressosController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressosController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\IngressosController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAwwB4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T11:14:47.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EntradaController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\EntradaController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\EntradaController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\EntradaController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\EntradaController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA6wBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:00:36.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RespostasController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\RespostasController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\RespostasController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\RespostasController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\RespostasController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAswDMAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T14:28:46.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\ClientesController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADwvzsAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T14:28:25.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PedidosController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\PedidosController.cs",
-              "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\PedidosController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\PedidosController.cs",
-              "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\PedidosController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T14:18:40.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "IngressoController.cs",
-              "DocumentMoniker": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
               "RelativeDocumentMoniker": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "ToolTip": "C:\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
+              "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-Adm Festa Junina\\Controllers\\IngressoController.cs",
               "RelativeToolTip": "API-Adm Festa Junina\\Controllers\\IngressoController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBMAAAAtAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAADwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T14:17:00.42Z"
+              "WhenOpened": "2025-04-22T13:18:52.076Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -173,7 +58,17 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1392,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
             }
           ]
         }

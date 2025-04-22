@@ -27,7 +27,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(respostas);
         }
 
-        [HttpPost] //Cadastrar respostas
+        [HttpPost("CadastrarRespostas")] //Cadastrar respostas
         public async Task<ActionResult<respostas>> CriarRespostas([FromBody] respostas respostas)
         {
             try
@@ -42,7 +42,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(respostas);
         }
 
-        [HttpGet("Contagem")] //Contagem de respostas
+        [HttpGet("ContagemRespostas")] //Contagem de respostas
         public async Task<ActionResult<IEnumerable<respostas>>> Contagem()
         {
             var perguntas  = await _dbContext.perguntas.Where(i => i.tipo_perguntas_id == 2).ToListAsync();

@@ -24,7 +24,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(entrada);
         }
 
-        [HttpGet("Contagem")] //Contar número de presentes e ausentes
+        [HttpGet("ContagemEntrada")] //Contar número de presentes e ausentes
         public async Task<ActionResult<IEnumerable<entrada>>> Contagem()
         {
             var entrada = await _dbContext.entrada.ToListAsync();

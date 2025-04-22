@@ -23,7 +23,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(pedidos);
         }
 
-        [HttpPut("{id}")] //Alterar status dos pedidos
+        [HttpPut("AlterarStatus/{id}")] //Alterar status dos pedidos
         public async Task<ActionResult<pedidos>> Atualizar(int id, [FromBody] pedidos pedidos)
         {
             var pedidoAtual = await _dbContext.pedidos.FindAsync(id);
@@ -37,7 +37,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(pedidos);
         }
 
-        [HttpGet("Contagem")] //Contagem de pedidos
+        [HttpGet("ContagemPedidos")] //Contagem de pedidos
         public async Task<ActionResult<IEnumerable<pedidos>>> ContagemPedidos()
         {
             var pedidos = await _dbContext.pedidos.ToListAsync();

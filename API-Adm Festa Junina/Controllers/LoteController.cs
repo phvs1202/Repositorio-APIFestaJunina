@@ -22,7 +22,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(lotes);
         }
 
-        [HttpPost] //Cadastrar lote
+        [HttpPost("CadastrarLote")] //Cadastrar lote
         public async Task<ActionResult<lote>> CriarLote([FromBody] lote Lote)
         {
             try

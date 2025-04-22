@@ -27,7 +27,7 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(usuarios);
         }
 
-        [HttpPost("login")] //Trazer um usuário especifico
+        [HttpPost("LoginUser")] //Trazer um usuário especifico
         public IActionResult Login([FromBody] LoginRequest login)
         {
             try
@@ -56,7 +56,7 @@ namespace API_Adm_Festa_Junina.Controllers
             }
         }
 
-        [HttpPost("register")] //Cadastrar Adminstrador ou Gerencia
+        [HttpPost("CadastroUser")] //Cadastrar Adminstrador ou Gerencia
         public async Task<ActionResult<usuario>> CriarUser([FromBody] usuario User)
         {
             try

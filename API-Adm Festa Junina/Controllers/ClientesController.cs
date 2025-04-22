@@ -19,7 +19,7 @@ namespace API_Adm_Festa_Junina.Controllers
             _context = context;
         }
 
-        [HttpPost("register")] //Cadastro do cliente
+        [HttpPost("CadastrarCliente")] //Cadastro do cliente
         public IActionResult Register([FromBody] cliente cliente)
         {
             try
@@ -43,7 +43,7 @@ namespace API_Adm_Festa_Junina.Controllers
             }
         }
 
-        [HttpPost("login")] //Login do cliente
+        [HttpPost("LoginCliente")] //Login do cliente
         public IActionResult Login([FromBody] Model.LoginRequest login)
         {
             try
