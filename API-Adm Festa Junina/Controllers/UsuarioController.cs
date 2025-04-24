@@ -46,6 +46,7 @@ namespace API_Adm_Festa_Junina.Controllers
                         id = usuario.id,
                         nome = usuario.nome,
                         email = usuario.email,
+                        telefone = usuario.telefone,
                         tipo_perfil = usuario.perfil_id
                     }
                 });
