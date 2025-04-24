@@ -6,6 +6,7 @@
         public string nome{ get; set; }
         public string email { get; set; }
         public string senha { get; set; }
-        public int telefone { get; set; }
+        public string telefone { get; set; }
+        public string caminho_foto { get; set; }
     }
 }
