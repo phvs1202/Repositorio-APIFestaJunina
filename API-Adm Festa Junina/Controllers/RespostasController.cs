@@ -28,16 +28,19 @@ namespace API_Adm_Festa_Junina.Controllers
         }
 
         [HttpPost("CadastrarRespostas")] //Cadastrar respostas
-        public async Task<ActionResult<respostas>> CriarRespostas([FromBody] respostas respostas)
+        public async Task<ActionResult<respostas>> CriarRespostas([FromBody] List<respostas> respostas)
         {
             try
             {
-                _dbContext.respostas.Add(respostas);
+                foreach(var resposta in respostas)
+                {
+                    _dbContext.respostas.Add(resposta);
+                }
                 await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest($"Erro: {ex.Message}\nDetalhes: {ex.InnerException?.Message ?? "Nenhuma exceção interna"}");
             }
             return Ok(respostas);
         }
