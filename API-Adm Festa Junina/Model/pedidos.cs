@@ -7,6 +7,6 @@
         public decimal valor { get; set; }
         public int cliente_id { get; set; }
         public int status_id { get; set; }
-        public Guid guid { get; set; }
+        public string guid { get; set; }
     }
 }

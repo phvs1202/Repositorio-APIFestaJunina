@@ -26,8 +26,8 @@ namespace API_Adm_Festa_Junina.Controllers
         [HttpGet] //Trazer todos os ingressos
         public async Task<ActionResult<IEnumerable<ingresso>>> Get()
         {
-            var lotes = await _dbContext.ingresso.ToListAsync();
-            return Ok(lotes);
+            var ingressos = await _dbContext.ingresso.ToListAsync();
+            return Ok(ingressos);
         }
 
         [HttpPut("AlterarStatus/{id}")] //Alterar status dos ingressos
@@ -56,7 +56,7 @@ namespace API_Adm_Festa_Junina.Controllers
         {
             try
             {
-                var novoGuid = Guid.NewGuid(); // Para diferenciar cada pedido de ingresso, implementei um GUID
+                var novoGuid = Guid.NewGuid().ToString(); // Para diferenciar cada pedido de ingresso, implementei um GUID
                 var lote = _dbContext.lote.Where(i => i.ativo == 1).FirstOrDefault(); // Vê qual lote está ativo
                 if (lote == null)
                 {
