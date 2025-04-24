@@ -92,7 +92,29 @@ namespace API_Adm_Festa_Junina.Controllers
             await _context.SaveChangesAsync();
 
             // Envia a nova senha por e-mail
-            string mensagem = $"<h1>EMAIL DE RECUPERAÇÃO DE CONTA.</h1>Olá, segue neste E-mail a sua nova senha para acessar sua conta novamente.<br>[SENHA NOVA]: <strong style='font-family:consolas;'>{novaSenha}</strong><br><strong>Nunca compartilhe sua senha nova com ninguém!</strong> Nós <strong>nunca vamos pedir suas credenciais por e-mail,</strong> qualquer e-mail relacionado, além deste, <strong>desconfie.</strong><br><p style='font-size:25px;'><i>E-mail seguro.</i></p><br><img src='https://logodownload.org/wp-content/uploads/2019/08/senai-logo.png' alt='Logo SENAI' style='max-width:50%; height:auto;'/>";
+            string mensagem = $@"
+            <div style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px;'>
+            <div style='background-color: #c41230; padding: 20px; text-align: center; color: white; font-family: ""Arial Black"", sans-serif;'>
+                <h1 style='margin: 0;'><i>EMAIL DE RECUPERAÇÃO DE CONTA</i></h1>
+            </div>
+
+            <div style='background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); margin-top: 20px;'>
+                <p>Olá,</p>
+                <p>Segue neste e-mail a sua nova senha para acessar sua conta novamente.</p>
+                
+                <p><strong>[SENHA NOVA]:</strong> <span style='font-family: Consolas, monospace; font-size: 18px;'>{novaSenha}</span></p>
+                
+                <p style='color: #c41230;'><strong>Nunca compartilhe sua senha nova com ninguém!</strong></p>
+                
+                <p>Nós <strong>nunca vamos pedir suas credenciais por e-mail.</strong> Qualquer e-mail relacionado, além deste, <strong>desconfie.</strong></p>
+
+                <p><i>E-mail seguro.</i></p>
+                
+                <div style='text-align: center; margin-top: 30px;'>
+                <img src='https://logodownload.org/wp-content/uploads/2019/08/senai-logo.png' alt='Logo SENAI' style='max-width: 200px; height: auto;' />
+                </div>
+            </div>
+            </div>";
 
             await _emailSender.SendEmailAsync(cliente.email, "FESTA JUNINA SENAI 2025 - Nova senha de acesso da conta.", mensagem);
 
