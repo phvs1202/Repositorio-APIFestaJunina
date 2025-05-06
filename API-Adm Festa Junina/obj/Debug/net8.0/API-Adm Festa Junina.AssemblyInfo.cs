@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API-Adm Festa Junina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bff625c3b21056b9e2e5a657cd7f22a722db07eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85c0e45050ab100695c52e817991ed66343c4cb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("API-Adm Festa Junina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API-Adm Festa Junina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

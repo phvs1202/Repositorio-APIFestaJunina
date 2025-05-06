@@ -149,5 +149,25 @@ namespace API_Adm_Festa_Junina.Controllers
             var ingresso = await _dbContext.ingresso.Where(i => i.cliente_id == id).ToListAsync();
             return Ok(ingresso);
         }
+
+        [HttpDelete("CancelarIngresso/{id}")]
+        public async Task<ActionResult> CancelarIngresso(int id)
+        {
+            var ingresso = await _dbContext.ingresso.FindAsync(id);
+
+            if (ingresso == null)
+                return NotFound("Ingresso não encontrado.");
+
+            if (ingresso.status_id == 1) // Exemplo: status 2 = VALIDADO
+                return BadRequest("Ingresso já foi validado e não pode ser cancelado.");
+
+            // Marcar como cancelado (status_id = 3, por exemplo)
+            ingresso.status_id = 3;
+
+            _dbContext.Entry(ingresso).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+
+            return Ok("Ingresso cancelado com sucesso.");
+        }
     }
 }

@@ -40,5 +40,40 @@ namespace API_Adm_Festa_Junina.Controllers
 
             return Ok(Lote);
         }
+
+        [HttpPut("EditarLote/{id}")]
+        public async Task<ActionResult<lote>> EditarLote(int id, [FromBody] lote loteAtualizado)
+        {
+            var loteExistente = await _dbContext.lote.FindAsync(id);
+
+            if (loteExistente == null)
+                return NotFound("Lote não encontrado.");
+
+            loteExistente.qtd_total = loteAtualizado.qtd_total;
+            loteExistente.data_inicio = loteAtualizado.data_inicio;
+            loteExistente.data_termino = loteAtualizado.data_termino;
+            loteExistente.valor_un = loteAtualizado.valor_un;
+            loteExistente.usuario_id = loteAtualizado.usuario_id;
+            loteExistente.ativo = loteAtualizado.ativo;
+
+            _dbContext.Entry(loteExistente).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+
+            return Ok(loteExistente);
+        }
+
+        [HttpDelete("DeletarLote/{id}")]
+        public async Task<ActionResult> DeletarLote(int id)
+        {
+            var lote = await _dbContext.lote.FindAsync(id);
+
+            if (lote == null)
+                return NotFound("Lote não encontrado.");
+
+            _dbContext.lote.Remove(lote);
+            await _dbContext.SaveChangesAsync();
+
+            return Ok("Lote deletado com sucesso.");
+        }
     }
 }
