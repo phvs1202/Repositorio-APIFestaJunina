@@ -27,7 +27,14 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(usuarios);
         }
 
-        [HttpPost("LoginUser")] //Trazer um usuário especifico
+        [HttpGet("{id}")] //Trazer todos os usuários
+        public async Task<ActionResult<IEnumerable<usuario>>> usuarioId(int id)
+        {
+            var usuarios = await _dbContext.usuario.Where(i => i.id == id).FirstOrDefaultAsync();
+            return Ok(usuarios);
+        }
+
+        [HttpPost("LoginUser")] //Login do usuário
         public IActionResult Login([FromBody] LoginRequest login)
         {
             try
@@ -46,7 +53,7 @@ namespace API_Adm_Festa_Junina.Controllers
                         id = usuario.id,
                         nome = usuario.nome,
                         email = usuario.email,
-                        telefone = usuario.telefone,
+                        //telefone = usuario.telefone,
                         tipo_perfil = usuario.perfil_id
                     }
                 });

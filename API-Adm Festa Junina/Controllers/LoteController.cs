@@ -22,6 +22,13 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(lotes);
         }
 
+        [HttpGet("{id}")] //Trazer lote específico
+        public async Task<ActionResult<IEnumerable<lote>>> LoteId(int id)
+        {
+            var lotes = await _dbContext.lote.Where(i => i.id == id).FirstOrDefaultAsync();
+            return Ok(lotes);
+        }
+
         [HttpPost("CadastrarLote")] //Cadastrar lote
         public async Task<ActionResult<lote>> CriarLote([FromBody] lote Lote)
         {

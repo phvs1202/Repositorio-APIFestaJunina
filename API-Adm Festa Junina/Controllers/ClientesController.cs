@@ -64,7 +64,6 @@ namespace API_Adm_Festa_Junina.Controllers
                         id = cliente.id,
                         nome = cliente.nome,
                         email = cliente.email,
-                        telefone = cliente.telefone// inclui telefone na resposta do login, se quiser
                     }
                 });
             }
