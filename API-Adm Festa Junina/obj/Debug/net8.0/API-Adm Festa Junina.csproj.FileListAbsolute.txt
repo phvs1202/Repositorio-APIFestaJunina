@@ -249,3 +249,68 @@ C:\RepositorioFestaJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\De
 C:\RepositorioFestaJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MimeKit.dll
 C:\RepositorioFestaJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\RepositorioFestaJunina\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\appsettings.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\API-Adm Festa Junina.exe
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\API-Adm Festa Junina.deps.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\API-Adm Festa Junina.runtimeconfig.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\API-Adm Festa Junina.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\API-Adm Festa Junina.pdb
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MailKit.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MimeKit.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\QRCoder.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Private.Windows.Core.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.csproj.AssemblyReference.cache
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.AssemblyInfoInputs.cache
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.AssemblyInfo.cs
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.csproj.CoreCompileInputs.cache
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.sourcelink.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets\msbuild.API-Adm Festa Junina.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets\msbuild.build.API-Adm Festa Junina.props
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API-Adm Festa Junina.props
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API-Adm Festa Junina.props
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\scopedcss\bundle\API-Adm Festa Junina.styles.css
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm .1C9948D8.Up2Date
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\refint\API-Adm Festa Junina.dll
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.pdb
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\API-Adm Festa Junina.genruntimeconfig.cache
+C:\Users\SRVWEBWIN01\Documents\GitHub\Repositorio-APIFestaJunina\API-Adm Festa Junina\obj\Debug\net8.0\ref\API-Adm Festa Junina.dll
