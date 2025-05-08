@@ -120,5 +120,33 @@ namespace API_Adm_Festa_Junina.Controllers
 
             return Ok(new { message = "Nova senha enviada para seu e-mail." });
         }
+
+        [HttpPut("EditarCliente")] //Editar informações do cliente
+        public async Task<IActionResult> EditarCliente(int id, [FromBody] cliente clienteAtualizado)
+        {
+            var cliente = _context.cliente.FirstOrDefault(c => c.id == id);
+            if (cliente == null)
+                return NotFound(new { message = "Cliente não encontrado." });
+
+            if (!string.IsNullOrWhiteSpace(clienteAtualizado.email) && clienteAtualizado.email != cliente.email)
+            {
+                if (_context.cliente.Any(c => c.email == clienteAtualizado.email))
+                    return BadRequest(new { message = "O e-mail já está em uso por outro cliente." });
+
+                cliente.email = clienteAtualizado.email;
+            }
+
+            if (!string.IsNullOrWhiteSpace(clienteAtualizado.nome))
+                cliente.nome = clienteAtualizado.nome;
+
+            if (!string.IsNullOrWhiteSpace(clienteAtualizado.telefone))
+                cliente.telefone = clienteAtualizado.telefone;
+
+            if (!string.IsNullOrWhiteSpace(clienteAtualizado.senha))
+                cliente.senha = PasswordHasher.HashPassword(clienteAtualizado.senha);
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Cliente atualizado com sucesso!" });
+        }
     }
 }
