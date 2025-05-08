@@ -22,23 +22,29 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(lotes);
         }
 
-        [HttpPost("CadastrarLote")] //Cadastrar lote
+        [HttpPost("CadastrarLote")]
         public async Task<ActionResult<lote>> CriarLote([FromBody] lote Lote)
         {
             try
             {
-                Lote.data_inicio = DateTime.Now;
-                Lote.data_termino = DateTime.Now;
+                // Verifica se as datas foram fornecidas
+                if (string.IsNullOrEmpty(Lote.data_inicio) || string.IsNullOrEmpty(Lote.data_termino))
+                    return BadRequest("As datas de início e término são obrigatórias.");
 
+                // Verifica se a data de término é anterior à data de início
+                if (string.Compare(Lote.data_termino, Lote.data_inicio) < 0)
+                    return BadRequest("A data de término não pode ser anterior à data de início.");
+
+                // Salva no banco de dados
                 _dbContext.lote.Add(Lote);
                 await _dbContext.SaveChangesAsync();
+
+                return Ok(Lote);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.InnerException?.Message ?? ex.Message);
             }
-
-            return Ok(Lote);
         }
 
         [HttpPut("EditarLote/{id}")]
