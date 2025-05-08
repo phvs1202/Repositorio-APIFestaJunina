@@ -4,7 +4,10 @@ using API_Adm_Festa_Junina.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Org.BouncyCastle.Utilities.Bzip2;
+using ZstdSharp.Unsafe;
 
 namespace API_Adm_Festa_Junina.Controllers
 {
@@ -72,6 +75,25 @@ namespace API_Adm_Festa_Junina.Controllers
             {
                 return StatusCode(500, new { message = "Erro ao realizar login.", erro = ex.Message });
             }
+        }
+
+        [HttpPut("AtualizarPerfil/{id}")] //Atualizar clientes
+        public async Task<ActionResult<cliente>> AtualizarPerfil(int id, [FromBody] cliente clienteAtualizado)
+        {
+            var cliente = _context.cliente.Where(i => i.id == id).FirstOrDefault();
+
+            if (cliente == null)
+                return NotFound("Usuário não encontrado.");
+
+            cliente.nome = clienteAtualizado.nome;
+            cliente.caminho_foto = clienteAtualizado.caminho_foto;
+            cliente.email = clienteAtualizado.email;
+            cliente.senha = clienteAtualizado.senha;
+            cliente.telefone = clienteAtualizado.telefone;
+
+            _context.cliente.Update(cliente);
+            await _context.SaveChangesAsync();
+            return Ok(cliente);
         }
 
         [HttpPost("esqueci-senha")]

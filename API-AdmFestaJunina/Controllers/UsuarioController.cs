@@ -99,5 +99,19 @@ namespace API_Adm_Festa_Junina.Controllers
             }
             return Ok(User);
         }
+
+        [HttpDelete("ExcluirUsuario/{id}")]
+        public async Task<ActionResult> ExcluirUsuario(int id)
+        {
+            var usuario = await _dbContext.usuario.FindAsync(id);
+
+            if (usuario == null)
+                return NotFound("Usuário não encontrado.");
+
+            _dbContext.usuario.Remove(usuario);
+            await _dbContext.SaveChangesAsync();
+
+            return Ok("Usuário excluído com sucesso.");
+        }
     }
 }
