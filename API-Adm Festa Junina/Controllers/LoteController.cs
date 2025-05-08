@@ -81,5 +81,19 @@ namespace API_Adm_Festa_Junina.Controllers
 
             return Ok("Lote deletado com sucesso.");
         }
+
+        // Método GET para buscar lote por id
+        [HttpGet("{id}")]
+        public async Task<ActionResult<lote>> GetLotePorId(int id)
+        {
+            var lote = await _dbContext.lote.FindAsync(id);
+
+            if (lote == null)
+            {
+                return NotFound("Lote não encontrado.");
+            }
+
+            return Ok(lote);
+        }
     }
 }
