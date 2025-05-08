@@ -23,19 +23,27 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(pedidos);
         }
 
-        [HttpPut("AlterarStatus/{id}")] //Alterar status dos pedidos
-        public async Task<ActionResult<pedidos>> Atualizar(int id, [FromBody] pedidos pedidos)
+        [HttpPut("AlterarStatus/{id}")] //Alterar status do pedido
+        public async Task<ActionResult<pedidos>> Atualizar(int id, [FromBody] pedidos pedido)
         {
             var pedidoAtual = await _dbContext.pedidos.FindAsync(id);
 
-            if (pedidos == null)
+            if (pedidoAtual == null)
                 return NotFound();
 
-            _dbContext.Entry(pedidoAtual).CurrentValues.SetValues(pedidos);
-            await _dbContext.SaveChangesAsync();
+            if (pedidoAtual.status_id == 1)
+            {
+                pedidoAtual.status_id = 2;
+            }
+            else
+            {
+                return BadRequest("O status do pedido não pode ser alterado.");
+            }
 
-            return Ok(pedidos);
+            await _dbContext.SaveChangesAsync();
+            return Ok(pedidoAtual);
         }
+
 
         [HttpGet("ContagemPedidos")] //Contagem de pedidos
         public async Task<ActionResult<IEnumerable<pedidos>>> ContagemPedidos()

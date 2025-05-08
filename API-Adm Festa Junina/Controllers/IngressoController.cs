@@ -30,18 +30,25 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(lotes);
         }
 
-        [HttpPut("AlterarStatus/{id}")] //Alterar status dos ingressos
+        [HttpPut("AlterarStatus/{id}")] //Alterar status do ingresso
         public async Task<ActionResult<ingresso>> Atualizar(int id, [FromBody] ingresso ingresso)
         {
             var ingressoAtual = await _dbContext.ingresso.FindAsync(id);
 
-            if (ingresso == null)
+            if (ingressoAtual == null)
                 return NotFound();
 
-            _dbContext.Entry(ingressoAtual).CurrentValues.SetValues(ingresso);
-            await _dbContext.SaveChangesAsync();
+            if (ingressoAtual.status_id== 1)
+            {
+                ingressoAtual.status_id = 2;
+            }
+            else
+            {
+                return BadRequest("O status do ingresso não pode ser alterado.");
+            }
 
-            return Ok(ingresso);
+            await _dbContext.SaveChangesAsync();
+            return Ok(ingressoAtual);
         }
 
         [HttpGet("ContagemIngressos")] //Contagem de ingressos
@@ -50,6 +57,31 @@ namespace API_Adm_Festa_Junina.Controllers
             var lotes = await _dbContext.ingresso.ToListAsync();
             return Ok(lotes.Count());
         }
+
+        [HttpGet("ContagemIngressosPorTipo")] // Contagem de ingressos por tipo
+        public async Task<ActionResult<object>> ContagemIngressosPorTipo()
+        {
+            var contagemIngressos = await _dbContext.ingresso
+                .GroupBy(i => i.tipo_ingresso_id)
+                .Select(g => new
+                {
+                    Tipo = g.Key,
+                    Quantidade = g.Count()
+                }).ToListAsync();
+
+            // Montando o JSON de resposta
+            var resultado = new
+            {
+                Colaborador = contagemIngressos.FirstOrDefault(x => x.Tipo == 1)?.Quantidade ?? 0,
+                Comunidade = contagemIngressos.FirstOrDefault(x => x.Tipo == 2)?.Quantidade ?? 0,
+                Crianca = contagemIngressos.FirstOrDefault(x => x.Tipo == 3)?.Quantidade ?? 0,
+                Familiar = contagemIngressos.FirstOrDefault(x => x.Tipo == 4)?.Quantidade ?? 0,
+                Aluno = contagemIngressos.FirstOrDefault(x => x.Tipo == 5)?.Quantidade ?? 0
+            };
+
+            return Ok(resultado);
+        }
+
 
         [HttpPost("ReservaIngressos")] //Reservar ingresso
         public async Task<ActionResult<ingresso>> CriarUser([FromBody] List<ingresso> ingresso)

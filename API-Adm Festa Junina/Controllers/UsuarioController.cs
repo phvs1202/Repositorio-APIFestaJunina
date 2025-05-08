@@ -7,6 +7,8 @@ using System.Security.Cryptography;
 using System.Text;
 using API_Adm_Festa_Junina.Helpers;
 using ZstdSharp.Unsafe;
+using System.Text.Json;
+using Org.BouncyCastle.Crypto.Prng;
 
 namespace API_Adm_Festa_Junina.Controllers
 {
@@ -25,6 +27,26 @@ namespace API_Adm_Festa_Junina.Controllers
         {
             var usuarios = await _dbContext.usuario.ToListAsync();
             return Ok(usuarios);
+        }
+
+        [HttpPut("AtualizarPerfil/{id}")]
+        public async Task<ActionResult<usuario>> AtualizarPerfil(int id, [FromBody] usuario usuarioAtualizado)
+        {
+            var usuario = _dbContext.usuario.Where(i => i.id == id).FirstOrDefault();
+
+            if (usuario == null)
+                return NotFound("Usuário não encontrado.");
+
+            usuario.nome = usuarioAtualizado.nome;
+            usuario.caminho_foto = usuarioAtualizado.caminho_foto;
+            usuario.email = usuarioAtualizado.email;
+            usuario.senha = usuarioAtualizado.senha;
+            usuario.telefone = usuarioAtualizado.telefone;
+            usuario.perfil_id = usuarioAtualizado.perfil_id;
+            
+            _dbContext.usuario.Update(usuario);
+            await _dbContext.SaveChangesAsync();
+            return Ok(usuario);
         }
 
         [HttpPost("LoginUser")] //Trazer um usuário especifico
