@@ -190,7 +190,7 @@ namespace API_Adm_Festa_Junina.Controllers
             if (ingresso == null)
                 return NotFound("Ingresso não encontrado.");
 
-            if (ingresso.status_id == 1) // Exemplo: status 2 = VALIDADO
+            if (ingresso.status_id == 2)
                 return BadRequest("Ingresso já foi validado e não pode ser cancelado.");
 
             // Marcar como cancelado (status_id = 3, por exemplo)
