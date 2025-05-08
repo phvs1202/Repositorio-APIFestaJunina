@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>API_Adm_Festa_Junina</RootNamespace>
+    <RootNamespace>API-AdmFestaJunina</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
