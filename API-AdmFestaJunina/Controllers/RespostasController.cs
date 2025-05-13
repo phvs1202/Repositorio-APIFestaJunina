@@ -48,7 +48,7 @@ namespace API_Adm_Festa_Junina.Controllers
         [HttpGet("ContagemRespostas")] //Contagem de respostas
         public async Task<ActionResult<IEnumerable<respostas>>> Contagem()
         {
-            var perguntas  = await _dbContext.perguntas.Where(i => i.tipo_perguntas_id == 2).ToListAsync();
+            var perguntas  = await _dbContext.perguntas.Where(i => i.tipo_perguntas_id == 1).ToListAsync();
 
             var resultado = new List<object>();
 
@@ -58,18 +58,20 @@ namespace API_Adm_Festa_Junina.Controllers
                     .Where(i => i.perguntas_id == pergunta.id)
                     .ToListAsync();
 
-                var otimas = respostas.Count(i => i.resposta == "Ótimo");
+                var otimas = respostas.Count(i => i.resposta == "Ótima");
                 var boas = respostas.Count(i => i.resposta == "Bom");
-                var meh = respostas.Count(i => i.resposta == "Meh");
+                var regular = respostas.Count(i => i.resposta == "Regular");
                 var ruins = respostas.Count(i => i.resposta == "Ruim");
+                var pessimo = respostas.Count(i => i.resposta == "Péssimo");
 
                 resultado.Add(new
                 {
                     pergunta = pergunta.nome,
                     otimas,
                     boas,
-                    meh,
-                    ruins
+                    regular,
+                    ruins,
+                    pessimo
                 });
             }
 
