@@ -30,13 +30,11 @@ namespace API_Adm_Festa_Junina.Controllers
             var entrada = await _dbContext.entrada.ToListAsync();
             var ingressos = await _dbContext.ingresso.ToListAsync();
 
-            var numeroPresentes = ingressos.Count - entrada.Count;
-
             return Ok(new
             {
                 message = "Número de pessoas presentes na festa",
                 NumeroDeIngressosVendidos = ingressos.Count,
-                NumeroDePresentes = numeroPresentes
+                NumeroDeEntradas = entrada.Count
             });
         }
     }
