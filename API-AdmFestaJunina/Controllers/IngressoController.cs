@@ -150,7 +150,12 @@ namespace API_Adm_Festa_Junina.Controllers
                     .Where(i => i.guid == novoGuid)
                     .ToListAsync();
 
-                var valorTotal = ingressosDoPedido.Count() * lote.valor_un;
+                
+                var ingressoInfantil = ingressosDoPedido.Where(i => i.tipo_ingresso_id == 4).ToList();
+                var ingressosAdulto = ingressosDoPedido.Where(i => i.tipo_ingresso_id != 4).ToList();
+
+                var valorTotal = (ingressoInfantil.Count * 6) + (ingressosAdulto.Count * lote.valor_un);
+
                 var clienteId = ingressosDoPedido.Select(i => i.cliente_id).FirstOrDefault();
 
                 var pedidos = new pedidos
