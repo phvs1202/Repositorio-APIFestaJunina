@@ -6,18 +6,16 @@ EXPOSE 80
 # Etapa de build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["API-AdmFestaJunina.csproj", "./"]
-RUN dotnet restore "API-AdmFestaJunina.csproj"
+COPY ["API-AdmFestaJunina/API-AdmFestaJunina.csproj", "API-AdmFestaJunina/"]
+RUN dotnet restore "API-AdmFestaJunina/API-AdmFestaJunina.csproj"
 
+# Copia o restante do código
 COPY . .
-RUN dotnet build "API-AdmFestaJunina.csproj" -c Release -o /app/build
-
-# Etapa de publish
-FROM build AS publish
-RUN dotnet publish "API-AdmFestaJunina.csproj" -c Release -o /app/publish
+WORKDIR /src/API-AdmFestaJunina
+RUN dotnet publish -c Release -o /app/publish
 
 # Etapa final
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "API-AdmFestaJunina.dll"]
