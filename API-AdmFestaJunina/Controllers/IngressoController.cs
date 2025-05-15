@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualBasic;
 using Org.BouncyCastle.Bcpg.Sig;
 using Org.BouncyCastle.Crypto.Parameters;
@@ -114,6 +115,7 @@ namespace API_Adm_Festa_Junina.Controllers
                     ingressos.qrcode = conteudoCodigo;
                     ingressos.guid = novoGuid;
                     ingressos.status_id = 1;
+                    ingressos.valor = lote.valor_un;
                     _dbContext.ingresso.Add(ingressos);  // Adiciona o ingresso à base de dados
                 }
 
@@ -150,9 +152,10 @@ namespace API_Adm_Festa_Junina.Controllers
                     .Where(i => i.guid == novoGuid)
                     .ToListAsync();
 
-                
                 var ingressoInfantil = ingressosDoPedido.Where(i => i.tipo_ingresso_id == 4).ToList();
                 var ingressosAdulto = ingressosDoPedido.Where(i => i.tipo_ingresso_id != 4).ToList();
+
+                
 
                 var valorTotal = (ingressoInfantil.Count * 6) + (ingressosAdulto.Count * lote.valor_un);
 
@@ -169,6 +172,7 @@ namespace API_Adm_Festa_Junina.Controllers
 
                 _dbContext.pedidos.Add(pedidos);
                 await _dbContext.SaveChangesAsync();  // Salva o pedido no banco
+                return Ok(pedidos);
 
             }
             catch (Exception ex)
@@ -187,10 +191,13 @@ namespace API_Adm_Festa_Junina.Controllers
             return Ok(ingresso);
         }
 
-        [HttpDelete("CancelarIngresso/{id}")]
-        public async Task<ActionResult> CancelarIngresso(int id)
+        [HttpDelete("CancelarIngresso/{id}/{guid}")]
+        public async Task<ActionResult> CancelarIngresso(int id, Guid guid)
         {
-            var ingresso = await _dbContext.ingresso.FindAsync(id);
+            var ingresso = _dbContext.ingresso.Where(i => i.id == id).FirstOrDefault();
+            var listaIngresso = _dbContext.ingresso.Where(i => i.guid == guid).ToList();
+
+            var pedido = _dbContext.pedidos.Where(i => i.guid == guid).FirstOrDefault();
 
             if (ingresso == null)
                 return NotFound("Ingresso não encontrado.");
@@ -198,8 +205,28 @@ namespace API_Adm_Festa_Junina.Controllers
             if (ingresso.status_id == 2)
                 return BadRequest("Ingresso já foi validado e não pode ser cancelado.");
 
+            if (pedido == null)
+                return NotFound("Pedido não encontrado.");
+
+            if (pedido.status_id == 2)
+                return BadRequest("Pedido já foi validado e não pode ser cancelado.");
+
             // Marcar como cancelado (status_id = 3, por exemplo)
             ingresso.status_id = 3;
+            pedido.status_id = 3;
+
+            var valorTotal = listaIngresso.Where(i => i.status_id == 1).Select(i => i.valor).Sum();
+
+            var pedidos = new pedidos
+            {
+                data = DateTime.Now,
+                valor = valorTotal,
+                cliente_id = ingresso.cliente_id,
+                status_id = 1,
+                guid = guid
+            };
+
+            _dbContext.pedidos.Add(pedidos);
 
             _dbContext.Entry(ingresso).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
