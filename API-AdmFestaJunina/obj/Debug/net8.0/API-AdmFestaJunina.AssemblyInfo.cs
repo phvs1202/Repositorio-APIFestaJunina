@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API-AdmFestaJunina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc8867ffb36e1888134ef5377238e636a3cac00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa9900a03b410a52026e1f3feca35c828ce0bc41")]
 [assembly: System.Reflection.AssemblyProductAttribute("API-AdmFestaJunina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API-AdmFestaJunina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

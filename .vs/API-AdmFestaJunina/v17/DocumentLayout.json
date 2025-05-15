@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-admfestajunina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|solutionrelative:api-admfestajunina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-admfestajunina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|solutionrelative:api-admfestajunina\\controllers\\ingressocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-admfestajunina\\model\\ingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|solutionrelative:api-admfestajunina\\model\\ingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|c:\\repositoriofestajunina\\repositorio-apifestajunina\\api-admfestajunina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F08DE430-9021-4DFC-9C13-D329832624D1}|API-AdmFestaJunina\\API-AdmFestaJunina.csproj|solutionrelative:api-admfestajunina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ingresso.cs",
               "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-AdmFestaJunina\\Model\\ingresso.cs",
               "RelativeDocumentMoniker": "API-AdmFestaJunina\\Model\\ingresso.cs",
@@ -43,26 +43,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IngressoController.cs",
               "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-AdmFestaJunina\\Controllers\\IngressoController.cs",
               "RelativeDocumentMoniker": "API-AdmFestaJunina\\Controllers\\IngressoController.cs",
               "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-AdmFestaJunina\\Controllers\\IngressoController.cs",
               "RelativeToolTip": "API-AdmFestaJunina\\Controllers\\IngressoController.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAAIwM8AAAAfAAAA",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAmwNEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T12:19:28.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-AdmFestaJunina\\appsettings.json",
               "RelativeDocumentMoniker": "API-AdmFestaJunina\\appsettings.json",
               "ToolTip": "C:\\RepositorioFestaJunina\\Repositorio-APIFestaJunina\\API-AdmFestaJunina\\appsettings.json",
               "RelativeToolTip": "API-AdmFestaJunina\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-13T17:28:48.266Z",
               "EditorCaption": ""

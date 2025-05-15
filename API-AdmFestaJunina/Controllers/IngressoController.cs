@@ -172,8 +172,6 @@ namespace API_Adm_Festa_Junina.Controllers
 
                 _dbContext.pedidos.Add(pedidos);
                 await _dbContext.SaveChangesAsync();  // Salva o pedido no banco
-                return Ok(pedidos);
-
             }
             catch (Exception ex)
             {
@@ -213,22 +211,21 @@ namespace API_Adm_Festa_Junina.Controllers
 
             // Marcar como cancelado (status_id = 3, por exemplo)
             ingresso.status_id = 3;
-            pedido.status_id = 3;
+            pedido.valor = listaIngresso.Where(i => i.status_id == 1).Select(i => i.valor).Sum();
 
-            var valorTotal = listaIngresso.Where(i => i.status_id == 1).Select(i => i.valor).Sum();
+            //var pedidos = new pedidos
+            //{
+            //    data = DateTime.Now,
+            //    valor = valorTotal,
+            //    cliente_id = ingresso.cliente_id,
+            //    status_id = 1,
+            //    guid = guid
+            //};
 
-            var pedidos = new pedidos
-            {
-                data = DateTime.Now,
-                valor = valorTotal,
-                cliente_id = ingresso.cliente_id,
-                status_id = 1,
-                guid = guid
-            };
-
-            _dbContext.pedidos.Add(pedidos);
+            //_dbContext.pedidos.Update(pedidos);
 
             _dbContext.Entry(ingresso).State = EntityState.Modified;
+            _dbContext.Entry(pedido).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
 
             return Ok("Ingresso cancelado com sucesso.");
